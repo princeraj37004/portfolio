@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Prince Kumar - Portfolio</title>
+    <!-- CSS File Link -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome Icons Link (social icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-   <div class="portfolio-container">
-      <ul class="navlist">
-        <li><a href="a" class="active">Home</a></li>
-        <li><a href="a">Work</a></li>
-        <li><a href="a">About</a></li>
-        <li><a href="a">Project</a></li>
-        <li><a href="a">Service</a></li>
-      </ul>
-      <div class="left-container">
-       <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-         </div>
-         <div class="content">
-            <p class="intro">Hi! I Am <span>Prince kumar</span></p>
-            <h1>Web Developer</h1>
-            <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officia consectetur voluptate in, similique corporis recusandae cum sed optio illum?</p>
-            <div class="btn-container">
-               <button>Hire Me</button>
-               <button>View Project</button>
+    <div class="portfolio-container">
+        
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <ul class="navlist">
+                    <li><a href="#home" class="active">HOME</a></li>
+                    <li><a href="#work">WORK</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Left Side Content -->
+            <div class="left-container">
+                <div class="icons">
+                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="content">
+                    <p class="intro">Hi! I Am <span class="highlight">Prince kumar</span></p>
+                    <h1>Web Developer</h1>
+                    <p class="detail">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officia consectetur voluptate in, 
+                        similique corporis recusandae cum sed optio illum?
+                    </p>
+                    <div class="btn-container">
+                        <button class="btn-filled">Hire Me</button>
+                        <button class="btn-outlined">View Project</button>
+                    </div>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="right-container"></div>
-      <div class="design">
-         <div class="circle"></div>
-         <div class="circle"></div>
-          <img src="profile.jpg" alt="Prince Kumar" style="width: 50%; height: 25%; border-radius: 50%; object-fit: cover;">
 
-      </div>
-
-   </div>
+            <!-- Right Side Image with Glow -->
+            <div class="right-container">
+                <div class="glow-circle">
+                    <!-- IMAGE PATH: Yahan apni image file ka naam likhein -->
+                    <img src="profile.jpg" alt="Prince Kumar portrait" class="profile-pic">
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
