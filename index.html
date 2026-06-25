@@ -4,59 +4,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prince Kumar - Portfolio</title>
-    <!-- CSS File Link -->
     <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome Icons Link (social icons ke liye) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-    <div class="portfolio-container">
-        
-        <!-- Navigation Bar -->
-        <header>
-            <nav>
-                <ul class="navlist">
-                    <li><a href="#home" class="active">HOME</a></li>
-                    <li><a href="#work">WORK</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#project">PROJECT</a></li>
-                    <li><a href="#service">SERVICE</a></li>
-                </ul>
-            </nav>
-        </header>
+   <div class="portfolio-container">
+      
+      <!-- Navigation Bar -->
+      <ul class="navlist">
+        <li><a href="#home" class="active">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#project">PROJECTS</a></li>
+        <li><a href="#work">WORK & EDUCATION</a></li>
+      </ul>
 
-        <!-- Main Content Area -->
-        <main>
-            <!-- Left Side Content -->
-            <div class="left-container">
-                <div class="icons">
-                    <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <div class="content">
-                    <p class="intro">Hi! I Am <span class="highlight">Prince kumar</span></p>
-                    <h1>Web Developer</h1>
-                    <p class="detail">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic officia consectetur voluptate in, 
-                        similique corporis recusandae cum sed optio illum?
-                    </p>
-                    <div class="btn-container">
-                        <button class="btn-filled">Hire Me</button>
-                        <button class="btn-outlined">View Project</button>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+         <div class="left-container">
+            <div class="icons">
+               <!-- MAINE YAHAN BADLAV KIYA HAI: Facebook, Instagram, aur LinkedIn ke links open hone ke liye <a> tags set kar diye hain -->
+               <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="https://linkedin.com" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+               <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+               <a href="mailto:princeraj37004@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+               <a href="tel:+918102437004" title="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            <div class="content">
+               <p class="intro">Hi! I Am <span>Prince kumar</span></p>
+               <h1>Web Developer</h1>
+               <p class="detail">Motivated and detail-oriented BCA student with a strong interest in Python, Machine Learning, and Web Development. Seeking an opportunity to apply technical skills and contribute effectively as a fresher in the IT industry.</p>
+               <div class="btn-container">
+                  <a href="mailto:princeraj37004@gmail.com"><button class="btn-filled">Hire Me</button></a>
+                  <a href="#project"><button class="btn-outlined">View Project</button></a>
+               </div>
+            </div>
+         </div>
+         <div class="right-container">
+            <div class="design">
+               <div class="circle">
+                   <img src="profile.jpg" alt="Prince Kumar">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section-container">
+         <h2 class="section-title">About Me</h2>
+         <div class="about-content">
+            <p>I am currently based in <strong>Patna, Bihar</strong>. As a technology enthusiast, my strengths include being a quick learner, a team player, and maintaining a positive attitude towards tackling complex problems. I have a strong interest in developing applications powered by AI and modern web standards.</p>
+         </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-container">
+         <h2 class="section-title">My Skills</h2>
+         <div class="skills-grid">
+            <div class="skill-card"><i class="fa-brands fa-python"></i> <h3>Python</h3></div>
+            <div class="skill-card"><i class="fa-solid fa-brain"></i> <h3>Machine Learning</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-html5"></i> <h3>HTML</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-css3-alt"></i> <h3>CSS</h3></div>
+            <div class="skill-card"><i class="fa-brands fa-js"></i> <h3>JavaScript</h3></div>
+            <div class="skill-card"><i class="fa-solid fa-file-excel"></i> <h3>MS Excel (Basic)</h3></div>
+            <div class="skill-card"><i class="fa-solid fa-lightbulb"></i> <h3>Problem Solving</h3></div>
+            <div class="skill-card"><i class="fa-solid fa-comments"></i> <h3>Communication</h3></div>
+         </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="project" class="section-container">
+         <h2 class="section-title">Academic Projects</h2>
+         <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+               <div class="project-img-placeholder">
+                  <i class="fa-solid fa-microphone-lines"></i>
+               </div>
+               <h3>Jarvis Voice Assistant</h3>
+               <p>Developed a voice assistant project using Python with features such as voice recognition, web browsing, music playback, and AI-based responses.</p>
+               <div class="tech-tags">
+                  <span>Python</span><span>AI</span><span>Voice API</span>
+               </div>
             </div>
 
-            <!-- Right Side Image with Glow -->
-            <div class="right-container">
-                <div class="glow-circle">
-                    <!-- IMAGE PATH: Yahan apni image file ka naam likhein -->
-                    <img src="profile.jpg" alt="Prince Kumar portrait" class="profile-pic">
-                </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+               <div class="project-img-placeholder">
+                  <i class="fa-solid fa-laptop-code"></i>
+               </div>
+               <h3>Personal Portfolio Website</h3>
+               <p>Created a responsive portfolio website using HTML and CSS to showcase projects, skills, and academic background layout parameters.</p>
+               <div class="tech-tags">
+                  <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+               </div>
             </div>
-        </main>
-    </div>
+
+         </div>
+      </section>
+
+      <!-- Work & Education Section -->
+      <section id="work" class="section-container">
+         <h2 class="section-title">Education & Experience</h2>
+         <div class="timeline">
+            
+            <!-- Education -->
+            <div class="timeline-item">
+               <div class="timeline-dot"></div>
+               <div class="timeline-date">Expected 2027 (CGPA: 8.5)</div>
+               <div class="timeline-content">
+                  <h3>Bachelor of Computer Applications (BCA)</h3>
+                  <h4>Amity University</h4>
+                  <p>Studying computer application foundations, structural code logic, database management, and intelligent software engineering models.</p>
+               </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="timeline-item">
+               <div class="timeline-dot"></div>
+               <div class="timeline-date">Fresher</div>
+               <div class="timeline-content">
+                  <h3>Seeking Internship Opportunities</h3>
+                  <h4>Open to Work</h4>
+                  <p>Actively looking for internship and entry-level software or data tracking opportunities to gain hands-on production industry experience.</p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+   </div>
 </body>
 </html>
